@@ -1,0 +1,15 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: YOUR_GOOGLE_CLIENT_ID
+            client-secret: YOUR_GOOGLE_CLIENT_SECRET
+            scope: https://www.googleapis.com/auth/calendar
+            redirect-uri: "{baseUrl}/login/oauth2/code/google"
+          microsoft:
+            client-id: YOUR_MICROSOFT_CLIENT_ID
+            client-secret: YOUR_MICROSOFT_CLIENT_SECRET
+            scope: Calendars.ReadWrite
+            redirect-uri: "{baseUrl}/login/oauth2/code/microsoft"
