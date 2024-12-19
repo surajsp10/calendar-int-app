@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Calendar Events</h1>
+  <table border="1" cellspacing="0" cellpadding="10">
+    <thead>
+      <tr>
+        <th>Event Subject</th>
+        <th>Start Date & Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let event of calendarEvents">
+        <td>{{ event.subject }}</td>
+        <td>{{ event.start?.dateTime }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
